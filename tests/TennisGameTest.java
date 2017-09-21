@@ -107,7 +107,7 @@ public class TennisGameTest {
 
 		game.player2Scored();
 
-		assertEquals("love 15 - incorrect", "Love - 15", game.getScore() );
+		assertEquals("love 15 - incorrect", "love - 15", game.getScore() );
 	}
 	
 	@Test
@@ -117,7 +117,7 @@ public class TennisGameTest {
 		game.player2Scored();
 		game.player2Scored();
 
-		assertEquals("love 30 - incorrect", "Love - 30", game.getScore() );
+		assertEquals("love 30 - incorrect", "love - 30", game.getScore() );
 	}
 	
 	@Test
@@ -127,14 +127,13 @@ public class TennisGameTest {
 		game.player1Scored();
 		game.player1Scored();
 
-		assertEquals("30 Love - incorrect", "30 - Love", game.getScore() );
+		assertEquals("30 Love - incorrect", "30 - love", game.getScore() );
 	}
 	
 	@Test
 	public void testTennisGame_Game40_Love() throws TennisGameException {
 		TennisGame game = new TennisGame();
 
-		game.player1Scored();
 		game.player1Scored();
 		game.player1Scored();
 		game.player1Scored();
@@ -150,7 +149,7 @@ public class TennisGameTest {
 		game.player2Scored();
 		game.player2Scored();
 
-		assertEquals("Love 40 - incorrect", "Love - 40", game.getScore() );
+		assertEquals("Love 40 - incorrect", "love - 40", game.getScore() );
 	}
 	
 	@Test
